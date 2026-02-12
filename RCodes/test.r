@@ -33,6 +33,7 @@ barplot(h,
 
 dataframe <- data.frame(h = h, M = M)
 View(dataframe)
-ggplot(dataframe, aes(x = M, y = h)) +
+p=ggplot(dataframe, aes(x = M, y = h)) +
     geom_bar(stat = "identity", fill = "#00cec9", color = "#fdcb6e") +
     labs(x = "X", y = "Y", title = "Chart")
+plot(p)
