@@ -1,5 +1,5 @@
-options("repos" = c(CRAN="https://mirrors.westlake.edu.cn/CRAN/"))
-options(BioC_mirror="https://mirrors.westlake.edu.cn/bioconductor")
+options("repos" = c(CRAN = "https://mirrors.westlake.edu.cn/CRAN/"))
+options(BioC_mirror = "https://mirrors.westlake.edu.cn/bioconductor")
 if (!require("devtools")) {
     install.packages("devtools")
 }
@@ -33,7 +33,7 @@ barplot(h,
 
 dataframe <- data.frame(h = h, M = M)
 View(dataframe)
-p=ggplot(dataframe, aes(x = M, y = h)) +
+p <- ggplot(dataframe, aes(x = M, y = h)) +
     geom_bar(stat = "identity", fill = "#00cec9", color = "#fdcb6e") +
     labs(x = "X", y = "Y", title = "Chart")
 plot(p)
