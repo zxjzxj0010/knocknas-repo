@@ -1,3 +1,11 @@
+options("repos" = c(CRAN="https://mirrors.westlake.edu.cn/CRAN/"))
+options(BioC_mirror="https://mirrors.westlake.edu.cn/bioconductor")
+if (!require("BiocManager")) {
+    install.packages("BiocManager")
+}
+if (!require("tidyverse")) {
+    install.packages("tidyverse")
+}
 library(tidyverse)
 # 1、计算和输出
 
