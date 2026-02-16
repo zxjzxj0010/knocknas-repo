@@ -9,7 +9,10 @@ if (!require("BiocManager")) {
 if (!require("tidyverse")) {
     install.packages("tidyverse")
 }
+
+setwd('RCodes/')
 library(tidyverse)
+
 # 1、计算和输出
 
 add <- function(x, y) {
