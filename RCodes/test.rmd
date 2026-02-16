@@ -1,0 +1,37 @@
+### hello world in R Markdown
+```{r}
+library(ggplot2)
+
+# Data
+set.seed(1)
+df <- data.frame(x = rnorm(200), y = rnorm(200))
+
+ggplot(df, aes(x = x, y = y, fill = ..level..)) +
+  stat_density_2d(geom = "polygon")
+```
+
+```{r}
+ggplot(cars, aes(x = speed, y = dist)) +
+    geom_point()
+```
+
+#### 生成一组随机数
+```{r}
+set.seed(1)
+x <- rnorm(100)
+```
+
+#### 绘制直方图
+```{r}
+hist(x)
+```
+
+#### 绘制散点图
+```{r}
+y <- rnorm(100)
+plot(x, y)
+```
+
+```{r fig.width=6, fig.height=4}
+plot(x, y)
+```
